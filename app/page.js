@@ -1,5 +1,6 @@
 import { existsSync } from "fs";
 import path from "path";
+import MobileMenu from "./MobileMenu";
 import { productCategories, products } from "./products";
 
 const phoneNumber = "064-876-3913";
@@ -227,11 +228,11 @@ function CategorySection({ categoryInfo }) {
 export default function Home() {
   return (
     <main className="bg-[#fff8ed] text-[#201913]">
-      <header className="sticky top-0 z-50 border-b border-[#e5d6c1] bg-[#fffaf2]/96 shadow-[0_6px_18px_rgba(55,36,20,0.05)] backdrop-blur">
+      <header className="relative sticky top-0 z-50 border-b border-[#e5d6c1] bg-[#fffaf2]/96 shadow-[0_6px_18px_rgba(55,36,20,0.05)] backdrop-blur">
         <nav className="mx-auto flex max-w-[1800px] items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
           <a href="#home" className="min-w-0 flex-1">
             <span className="whitespace-nowrap text-xl font-black text-[#111] sm:text-[24px] lg:text-[28px]">
-              LB Bakery Wholesale
+              LB Bakery Wholesale 
             </span>
           </a>
 
@@ -249,51 +250,42 @@ export default function Home() {
 
           <a
             href={`tel:${phoneNumber.replaceAll("-", "")}`}
-            className="hidden shrink-0 rounded-md border border-[#8c5a35] px-4 py-3 text-base font-black text-[#432817] hover:bg-[#f7ecdc] sm:inline-flex"
+            className="hidden shrink-0 rounded-md border border-[#8c5a35] px-4 py-3 text-base font-black text-[#432817] hover:bg-[#f7ecdc] lg:inline-flex"
           >
             {phoneNumber}
           </a>
+          <MobileMenu items={navItems} phoneNumber={phoneNumber} />
         </nav>
-
-        <div className="flex gap-1 overflow-x-auto border-t border-[#eadfce] px-4 py-2 text-[18px] font-semibold text-[#3a2a1d] lg:hidden">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="whitespace-nowrap rounded-md px-3 py-2 hover:bg-[#f0e3d1]"
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
       </header>
 
-      <section id="home" className="relative h-[560px] overflow-hidden bg-[#1b120b] sm:h-[460px] lg:h-[520px]">
+      <section id="home" className="phone-hero relative h-[420px] overflow-visible bg-[#1b120b] sm:h-[460px] lg:h-[520px]">
         <img
           src="/images/hero.jpg"
           alt="Assorted fresh bakery breads"
           className="absolute inset-0 h-full w-full object-cover object-right"
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 mx-auto flex h-full max-w-[1800px] items-center px-6 py-4 sm:px-10 sm:py-4 lg:px-16 lg:py-4">
-          <div className="w-full max-w-[900px] text-left text-white">
-            <h1 className="text-[36px] font-black leading-[1.05] sm:text-[48px] lg:text-[60px]">
+        <div className="phone-hero-inner relative z-10 mx-auto flex h-full max-w-[1800px] items-center px-6 pb-0 pt-1 sm:px-10 sm:py-4 lg:px-16 lg:py-4">
+          <div className="phone-hero-content w-full max-w-[900px] translate-y-0 text-left text-white">
+            <h1 className="phone-hero-title pt-4 text-left text-[26px] font-black leading-[1.25] sm:pt-0 sm:text-[48px] sm:leading-[1.05] lg:text-[60px]">
               Fresh Baked Products
               <br />
               Your Customers Will Love
             </h1>
-            <p className="mt-10 max-w-[720px] text-[22px] leading-8 text-white sm:text-[26px] sm:leading-8">
-              Supplying Hotels, Cafés &amp; Caterers Throughout Thailand
+            <p className="phone-hero-tagline mt-3 block max-w-[310px] text-left text-[18px] font-light italic leading-[1.35] text-white sm:mt-7 sm:max-w-[720px] sm:text-[26px] sm:leading-[1.35]">
+              Wholesale Bakery for Hotels,
+              <br />
+              Caf&eacute;s &amp; Caterers Across Thailand
             </p>
-            <div className="mt-9 flex items-center gap-4 sm:gap-8">
+            <div className="phone-hero-action mt-[26px] flex flex-row items-center gap-[18px] sm:mt-9 sm:gap-8">
               <img
                 src="/images/lb-logo.png"
                 alt="LB Bakery logo"
-                className="h-24 w-36 shrink-0 object-contain sm:h-[168px] sm:w-72"
+                className="h-20 w-30 shrink-0 object-contain sm:h-[168px] sm:w-72"
               />
               <a
                 href="#contact"
-                className="inline-flex rounded-md bg-[#9b6237] px-9 py-[21px] text-base font-black uppercase tracking-[0.06em] text-white hover:bg-[#84512c]"
+                className="inline-flex rounded-md bg-[#9b6237] px-7 py-4 text-base font-black uppercase tracking-[0.06em] text-white hover:bg-[#84512c] sm:px-9 sm:py-[21px]"
               >
                 Contact Us
               </a>

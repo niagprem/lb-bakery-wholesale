@@ -20,7 +20,7 @@
   - note: Optional short note. Leave as "" if no note should show.
   - options: Optional array for multi-option products. Each option supports:
     optionName, specifications, price, and salesUnit.
-  - imageFilename: Image path inside /public, such as /images/plain-bagel.png
+  - imageFilename: Image path inside /public, such as /images/plain-bagel.jpg
 */
 
 export const productCategories = [
@@ -480,7 +480,7 @@ export const products = [
     specifications: "",
     note: "",
     active: "no",
-    imageFilename: "/images/soft-dinner-roll.jpg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Buns",
@@ -538,7 +538,7 @@ export const products = [
     packSize: "12 pcs / tray",
     specifications: "Cut portions",
     note: "Fresh or chilled",
-    imageFilename: "/images/fudge-brownies.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Brownies",
@@ -548,7 +548,7 @@ export const products = [
     packSize: "12 pcs / tray",
     specifications: "Cut portions",
     note: "",
-    imageFilename: "/images/walnut-brownies.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Brownies",
@@ -558,7 +558,7 @@ export const products = [
     packSize: "1 slab / tray",
     specifications: "Uncut slab",
     note: "Packaging",
-    imageFilename: "/images/brownie-slab.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -568,7 +568,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "",
-    imageFilename: "/images/carrot-cake-tray.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -578,7 +578,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "Chilled",
-    imageFilename: "/images/blueberry-muffins.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -588,7 +588,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "Chilled",
-    imageFilename: "/images/banana-bread-loaf.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -598,7 +598,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "Chilled",
-    imageFilename: "/images/chocolate-cake-slices.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -608,7 +608,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "",
-    imageFilename: "/images/carrot-cake-tray.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -618,7 +618,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "",
-    imageFilename: "/images/walnut-brownies.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -628,7 +628,7 @@ export const products = [
     packSize: "1 whole pie",
     specifications: "8 inch",
     note: "",
-    imageFilename: "/images/banana-bread-loaf.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -638,7 +638,7 @@ export const products = [
     packSize: "6 pcs / pack",
     specifications: "Individual pies",
     note: "Frozen. Ready to bake",
-    imageFilename: "/images/dinner-rolls.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -648,7 +648,7 @@ export const products = [
     packSize: "6 pcs / pack",
     specifications: "Individual pies",
     note: "Frozen. Ready to bake",
-    imageFilename: "/images/burger-buns.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   },
   {
     category: "Pies",
@@ -658,7 +658,7 @@ export const products = [
     packSize: "12 pcs / pack",
     specifications: "Mini size",
     note: "Packaging",
-    imageFilename: "/images/chocolate-cake-slices.svg"
+    imageFilename: "/images/bakery-placeholder.svg"
   }
 ];
 
